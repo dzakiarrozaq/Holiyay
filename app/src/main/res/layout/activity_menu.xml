@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <GridLayout
+        android:id="@+id/circleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:rowCount="2"
+        android:columnCount="2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Jakarta"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/jakarta" />
+            <TextView
+                android:id="@+id/tx_jakarta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jakarta"
+                android:fontFamily="@font/poppinsreg"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/JawaTengah"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/jawatengah" />
+            <TextView
+                android:id="@+id/tx_jawa_tengah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jawa Tengah"
+                android:fontFamily="@font/poppinsreg"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/JawaTimur"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/jawatimur" />
+            <TextView
+                android:id="@+id/tx_jawa_timur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jawa_timur"
+                android:fontFamily="@font/poppinsreg"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/JawaBarat"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/jawabarat" />
+            <TextView
+                android:id="@+id/tx_jawa_barat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jawa_barat"
+                android:fontFamily="@font/poppinsreg"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
